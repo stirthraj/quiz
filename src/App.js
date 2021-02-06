@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import { Header } from 'antd/lib/layout/layout';
 import './App.css';
+import AddQuestion from './component/addquestion';
+import Codingtest from './component/codingtest';
+import Game from './component/game';
+import Mcqtest from './component/mcqtest';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return (<>
+       <Header>QUIZCODE Platform</Header>
+       <AddQuestion/>
+       <Codingtest/>
+       <Game name="Actice user"/>
+       <Mcqtest/>
+  </>);
 }
 
 export default App;
